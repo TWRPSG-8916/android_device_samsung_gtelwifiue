@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gtelwifiue/
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gtelwifiue
 PRODUCT_NAME := omni_gtelwifiue
-PRODUCT_BRAND := Samsung
+PRODUCT_BRAND := Galaxy
 PRODUCT_MODEL := SM-T560NU
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RELEASE_NAME := Tab E 9.6
