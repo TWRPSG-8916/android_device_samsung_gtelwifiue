@@ -47,7 +47,7 @@ TARGET_KERNEL_CONFIG := gtelwifiue_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/gtelwifiue/bootimg.mk
 
 # Ramdisk compression
-LZMA_RAMDISK_TARGETS := recovery
+LZMA_RAMDISK_TARGETS := boot,recovery
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
