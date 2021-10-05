@@ -1,5 +1,7 @@
 TWRP Device Tree 
 
+TWRP Based On Android 10
+
 Tab E 9.6
 
 SM-T560NU
