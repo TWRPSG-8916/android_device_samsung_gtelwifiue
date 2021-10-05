@@ -1,5 +1,7 @@
 PitchBlack Recovery Device Tree 
 
+PitchBlack Based On Android 9
+
 Tab E 9.6
 
 SM-T560NU
