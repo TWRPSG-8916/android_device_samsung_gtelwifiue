@@ -15,6 +15,7 @@ $(call inherit-product, device/samsung/gtelwifiue/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gtelwifiue/recovery/root,recovery/root)
 
@@ -22,6 +23,6 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gtelwifiue/
 PRODUCT_DEVICE := gtelwifiue
 PRODUCT_NAME := omni_gtelwifiue
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-T560NU
+PRODUCT_MODEL := SM-T560
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_RELEASE_NAME := Tab E 9.6
