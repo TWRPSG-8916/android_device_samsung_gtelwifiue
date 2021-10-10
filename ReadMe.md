@@ -1,6 +1,6 @@
 TWRP Device Tree 
 
-TWRP Based On Android 10
+TWRP Based On Android 11
 
 Tab E 9.6
 
