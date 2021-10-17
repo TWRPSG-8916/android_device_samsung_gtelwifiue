@@ -14,14 +14,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/samsung/gtelwifiue/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/Android.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/gtelwifiue/recovery/root,recovery/root)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gtelwifiue
-PRODUCT_NAME := omni_gtelwifiue
+PRODUCT_NAME := twrp_gtelwifiue
 PRODUCT_BRAND := Galaxy
 PRODUCT_MODEL := SM-T560NU
 PRODUCT_MANUFACTURER := Samsung
