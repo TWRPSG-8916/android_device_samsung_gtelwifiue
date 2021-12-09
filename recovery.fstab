@@ -1,20 +1,12 @@
-# Device Partitions
-/system         ext4    /dev/block/bootdevice/by-name/system        flags=display="System";wipeingui;backup=1;
-/cache          ext4    /dev/block/bootdevice/by-name/cache         flags=display="Cache";
-/data           ext4    /dev/block/bootdevice/by-name/userdata      flags=display="Data";length=-16384;
-/boot           emmc    /dev/block/bootdevice/by-name/boot          flags=display="Boot";backup=1;flashimg=1;
-/recovery       emmc    /dev/block/bootdevice/by-name/recovery      flags=display="Recovery";backup=1;flashimg=1;
+/boot           emmc        /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery       emmc        /dev/block/platform/msm_sdcc.1/by-name/recovery flags=display="Recovery";backup=1
+/system         ext4        /dev/block/platform/msm_sdcc.1/by-name/system
+/data           ext4        /dev/block/platform/msm_sdcc.1/by-name/userdata
+/cache          ext4        /dev/block/platform/msm_sdcc.1/by-name/cache
+/firmware       emmc        /dev/block/platform/msm_sdcc.1/by-name/modem    flags=display="Modem";backup=0
+/efs            ext4        /dev/block/platform/msm_sdcc.1/by-name/efs      flags=display="EFS";backup=1
+/persist        ext4        /dev/block/platform/msm_sdcc.1/by-name/persist  flags=display="Persist";backup=1
+/misc           emmc        /dev/block/platform/msm_sdcc.1/by-name/fota     flags=display="Misc"
 
-# ONLY Enable For Dev/Testing Purposes
-#/misc          emmc    /dev/block/bootdevice/by-name/fota          flags=backup=1;display=Misc/Fota
-#/efs1          emmc    /dev/block/bootdevice/by-name/efs           flags=backup=1;display=EFS
-#/efs2          emmc    /dev/block/bootdevice/by-name/modemst1      flags=backup=1;subpartitionof=/efs1
-#/efs3          emmc    /dev/block/bootdevice/by-name/modemst2      flags=backup=1;subpartitionof=/efs1
-#/modem         vfat    /dev/block/bootdevice/by-name/modem         flags=backup=1;display="Modem"
-#/firmware      vfat    /dev/block/bootdevice/by-name/apnhlos       flags=backup=1;display="Firmware"
-
-# External Storage
-/external_sd    auto    /dev/block/mmcblk1p1 /dev/block/mmcblk1     flags=display="Micro-SDcard";storage;wipeingui;removable
-/usb-otg        auto    /dev/block/sda1         /dev/block/sda      flags=display="USB-OTG";storage;wipeingui;removable
-
-
+/external_sd    auto        /dev/block/mmcblk1p1   /dev/block/mmcblk1       flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg        auto        /dev/block/sda1        /dev/block/sda           flags=display="USB Storage";storage;wipeingui;removable
