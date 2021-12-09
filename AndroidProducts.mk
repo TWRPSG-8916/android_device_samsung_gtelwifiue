@@ -7,8 +7,3 @@
 
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/omni_gtelwifiue.mk
-
-COMMON_LUNCH_CHOICES := \
-    omni_gtelwifiue-user \
-    omni_gtelwifiue-userdebug \
-    omni_gtelwifiue-eng
